@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: .
+    command: npm run start
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "4200:4200"
