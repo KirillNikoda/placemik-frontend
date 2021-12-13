@@ -1,10 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Apollo, gql } from 'apollo-angular';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'koreplace-frontend';
+export class AppComponent implements OnInit {
+  todos: any[] = [];
+
+  constructor(private apollo: Apollo) {}
+
+  buildQuery() {
+    return gql`
+      query getCountries {
+        countries {
+          name
+        }
+      }
+    `;
+  }
+
+  ngOnInit() {
+    this.apollo
+      .query({
+        query: this.buildQuery(),
+      })
+      .subscribe(({ data }: any) => (this.todos = data.countries));
+  }
 }
