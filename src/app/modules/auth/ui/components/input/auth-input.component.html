@@ -1,0 +1,9 @@
+<div class="auth-input-container">
+  <label [for]="id">{{ label }}</label>
+  <input
+    [type]="type"
+    [placeholder]="placeholder"
+    [(ngModel)]="bindModelData"
+    (ngModelChange)="updateData($event)"
+  />
+</div>
