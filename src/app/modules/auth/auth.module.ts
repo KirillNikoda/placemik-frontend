@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthPromptComponent } from '@modules/auth/ui/components/prompt/prompt.component';
 import { LoginPageComponent } from '@modules/auth/ui/pages/login/login.component';
 import { RegisterPageComponent } from '@modules/auth/ui/pages/register/register.component';
 
@@ -17,6 +18,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(routes)],
-  declarations: [RegisterPageComponent, LoginPageComponent],
+  declarations: [
+    RegisterPageComponent,
+    LoginPageComponent,
+    AuthPromptComponent,
+  ],
 })
 export class AuthenticationModule {}

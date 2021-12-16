@@ -1,0 +1,27 @@
+.prompt-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.prompt-btn {
+  padding: 8px 22px;
+  background: linear-gradient(
+    96.78deg,
+    rgba(246, 77, 77, 0.2) -57.09%,
+    rgba(77, 94, 246, 0.2) 101.17%
+  );
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}

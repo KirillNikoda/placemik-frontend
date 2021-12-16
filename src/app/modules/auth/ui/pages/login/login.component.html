@@ -31,6 +31,14 @@
       </div>
     </form>
     <button class="sign-in gradient-button">Войти</button>
-    <a href="#" class="gradient-text center-text">По номеру телефона</a>
+    <a href="#" class="by-phone-number gradient-text center-text"
+      >По номеру телефона</a
+    >
+
+    <pm-auth-prompt
+      promptTitle="Забыли пароль?"
+      promptButtonTitle="Зарегистрироваться"
+      (promptEvent)="onPrompt()"
+    ></pm-auth-prompt>
   </div>
 </section>
