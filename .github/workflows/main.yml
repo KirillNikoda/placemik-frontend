@@ -17,7 +17,5 @@ jobs:
         run: yarn install
       - name: Run Lint Tests
         run: yarn lint
-      - name: Run Unit Tests
-        run: yarn ci:test
       - name: Build
         run: yarn build
