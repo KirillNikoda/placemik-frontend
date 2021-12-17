@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthInputComponent } from '@modules/auth/ui/components/input/auth-input.component';
 import { AuthLayoutComponent } from '@modules/auth/ui/components/layout/auth-layout.component';

@@ -1,0 +1,19 @@
+name: PlacemikCI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 17.2.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17.2.0
+      - name: Install dependencies
+        run: yarn install
+      - name: Run Lint Tests
+        run: yarn lint
