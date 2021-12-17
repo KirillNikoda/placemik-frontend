@@ -37,11 +37,11 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless', 'Firefox'],
     customLaunchers: {
-      ChromeHeadlessCustom: {
+      ChromeHeadlessCI: {
         base: 'ChromeHeadless',
-        flags: ['--no-sandbox', '--disable-gpu']
+        flags: ['--no-sandbox']
       }
     },
     coverageIstanbulReporter: {
