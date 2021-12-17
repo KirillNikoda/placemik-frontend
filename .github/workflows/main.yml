@@ -17,5 +17,3 @@ jobs:
         run: yarn install
       - name: Run Lint Tests
         run: yarn lint
-      - name: Build
-        run: yarn build
