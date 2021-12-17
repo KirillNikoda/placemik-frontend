@@ -1,0 +1,42 @@
+<pm-auth-layout>
+  <h2 class="sign-in-title">Вход</h2>
+  <form class="sign-in-form">
+    <div class="form-label-container">
+      <label for="email">E-mail</label>
+      <input
+        id="email"
+        placeholder="Введите e-mail"
+        type="email"
+        class="ud-form"
+      />
+    </div>
+    <div class="form-label-container">
+      <label for="email">Пароль</label>
+      <input
+        id="email"
+        placeholder="Введите пароль"
+        type="password"
+        class="ud-form"
+      />
+    </div>
+    <div class="form-label-container">
+      <label for="email">капча</label>
+      <input
+        id="email"
+        placeholder="Введите код с картинки"
+        type="text"
+        class="ud-form"
+      />
+    </div>
+  </form>
+  <button class="sign-in gradient-button">Войти</button>
+  <a href="#" class="by-phone-number gradient-text center-text"
+    >По номеру телефона</a
+  >
+
+  <pm-auth-prompt
+    promptTitle="Забыли пароль?"
+    promptButtonTitle="Зарегистрироваться"
+    (promptEvent)="onPrompt()"
+  ></pm-auth-prompt>
+</pm-auth-layout>

@@ -1,0 +1,30 @@
+.sign-in-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: #000000;
+}
+
+.sign-in-form {
+  margin-top: 28px;
+
+  & .form-label-container:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.form-label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 27px;
+}
+
+.sign-in {
+  margin: 16px 0;
+}
+
+.by-phone-number {
+  margin-bottom: 47px;
+}

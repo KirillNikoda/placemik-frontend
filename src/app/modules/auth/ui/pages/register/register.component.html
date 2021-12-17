@@ -1,0 +1,19 @@
+<pm-auth-layout>
+  <h2 class="register-title">Регистрация</h2>
+  <div class="register-tab-container">
+    <button
+      [class.register-active-tab]="activeTab === 'email'"
+      class="register-tab email-tab-radii"
+      (click)="setActiveTab('email')"
+    >
+      По E-mail
+    </button>
+    <button
+      [class.register-active-tab]="activeTab === 'phone'"
+      class="register-tab phone-tab-radii"
+      (click)="setActiveTab('phone')"
+    >
+      По телефону
+    </button>
+  </div>
+</pm-auth-layout>
