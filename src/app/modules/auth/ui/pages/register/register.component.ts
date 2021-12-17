@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterPageComponent {
-  activeTab: string = 'email';
+  activeTab = 'email';
 
   setActiveTab(tab: string) {
     this.activeTab = tab;
