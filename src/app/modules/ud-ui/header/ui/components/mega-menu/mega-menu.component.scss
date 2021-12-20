@@ -1,0 +1,36 @@
+.btn {
+  width: 77px;
+  height: 77px;
+}
+
+.btn-header {
+  position: relative;
+  background: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+  box-shadow: 0px 0px 23.5821px rgba(0, 0, 0, 0.12);
+  outline-offset: -1px;
+  border: none;
+}
+
+.btn-header span{
+  position: absolute;
+  max-width: 50%;
+  height: 4px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.btn-header span:nth-child(1) {
+  left: 20px;
+  top: 25px;
+}
+
+.btn-header span:nth-child(2) {
+  left: 20px;
+  top: 40px;
+}
+
+.btn-header span:nth-child(3) {
+  left: 20px;
+  top: 55px;
+}
